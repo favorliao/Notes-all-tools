@@ -1,4 +1,9 @@
 # Ferret
+## Fast plot figures using repeat: 
+```
+ferret -nodisplay
+```
+
 ## compute climatological value (monthly or daily mean)
 ```
 yes? show axis/all
@@ -14,4 +19,12 @@ yes? PLOT/X=180/Y=40/OVERLAY uwnd_climatology[T=15-jan-1983:15-jan-1991]
 yes? set window /quality=high /aspect=0.5:axis 1 !0.5 is the y length
 ```
 
-## Fast plot figures using repeat: ferret -nodisplay
+## Add extra search directory, take map nc as an example
+```
+1. vi .bashrc
+2. add this line: export FER_DATA="/home/enhuil/ferret ./"
+3. Download mapnc file and put it in /home/enhuil/ferret. 
+```
+map nc canbe download [here](http://ferret.pmel.noaa.gov/static/Demos/land_detail/geo_borders_intermed.nc)
+
+
