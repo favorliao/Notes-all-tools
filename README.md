@@ -27,4 +27,11 @@ yes? set window /quality=high /aspect=0.5:axis 1 !0.5 is the y length
 ```
 map nc canbe download [here](http://ferret.pmel.noaa.gov/static/Demos/land_detail/geo_borders_intermed.nc)
 
-
+## plot the box in the map
+Usage : GO box xlo xhi ylo yhi [pen_number]
+```
+   yes? use coads_climatology
+   yes? fill/x=100:300/y=-50:50/l=1 sst ! base plot
+   yes? go box 180,220,-10,10,7         ! red thick rectangle
+   yes? go box 170,230,-15,15,9         ! green thick rectangle
+```
