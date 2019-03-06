@@ -1,4 +1,4 @@
-1. save a shell file: open_jupyter
+1. save a shell file in the serve: open_jupyter
 ```
 #!/usr/bin/env bash
 
@@ -13,7 +13,7 @@ echo please run the following command in your local machine:
 echo "open -a safari http://localhost:$PORT; ssh -NL localhost:$PORT:localhost:$PORT td"
 jupyter notebook --no-browser --port=$PORT --ip=127.0.0.1
 ```
-2. run this file: ./open_jupyter
+2. run this file in the serve: ./open_jupyter
 3. input in local pc:
 ```
 ssh -NL localhost:8999:localhost:8999 enhuil@tigressdataprinceton.edu
