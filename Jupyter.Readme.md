@@ -20,5 +20,6 @@ ssh -NL localhost:8999:localhost:8999 enhuil@tigressdata2.princeton.edu
 ```
 4. copy and paste link provided from step 2 to the google chrome.
 
-```http://127.0.0.1:8999/?token=c2e4fa2a18e2b31f5344ee639549b643ab2cec4b1ce9e184
+```
+http://127.0.0.1:8999/?token=c2e4fa2a18e2b31f5344ee639549b643ab2cec4b1ce9e184
 ```
