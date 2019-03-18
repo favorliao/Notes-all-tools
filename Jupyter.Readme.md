@@ -16,5 +16,6 @@ jupyter notebook --no-browser --port=$PORT --ip=127.0.0.1
 2. run this file in the serve: ./open_jupyter (this file is in /tigress/enhuil/)
 3. input in local pc:
 ```
-ssh -NL localhost:8999:localhost:8999 enhuil@tigressdataprinceton.edu
+ssh -NL localhost:8999:localhost:8999 enhuil@tigressdata2.princeton.edu
 ```
+4. copy and paste link provided from step 2 to the google chrome.
