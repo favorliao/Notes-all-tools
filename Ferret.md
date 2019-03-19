@@ -35,3 +35,7 @@ Usage : GO box xlo xhi ylo yhi [pen_number]
    yes? go box 180,220,-10,10,7         ! red thick rectangle
    yes? go box 170,230,-15,15,9         ! green thick rectangle
 ```
+## If else then
+```
+LET runoff2 = IF runoff GT 0.4e-4 THEN 0.4e-4 else runoff
+```
