@@ -22,9 +22,17 @@ clf();ds.temp.sel(time='2010-01',xh=200, method='nearest').sel(zl=slice(0,500)).
 ```
 This line plot a section along longitude(xh)=200E, depth from surface to 500 meters, reverse y coordinate
 ```
-figure(figsize=(8,3)); ds.temp.sel(time='2010-01').isel(zl=5).geo.cartoplot(cmap='jet')
+close('all');figure(figsize=(8,3)); ds.temp.sel(time='2010-01').isel(zl=5).geo.cartoplot(cmap='jet')
 ```
-This 
+This line close all the figures, set up figure size, plot the map with wenchang's geographic setup
+```
+fig, axes = plt.subplots(2, 2)
+ds.temp.sel(time='2010-01', zl=5).plot(ax=axes[0,0])
+ds.temp.sel(time='2010-01', zl=5).plot(ax=axes[0,1])
+axes[0,0].set_title('')
+axes[0,0].set_xlabe('')
+```
+These five lines plot the four maps in one figure
 
 # plot figure
 ds.fco2.sel(xh=slice(180,200)).sel(yh=slice(-5,5)).sel(time=slice("2000-1-1","2004-7-1")).mean("time").plot()
