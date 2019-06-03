@@ -63,5 +63,5 @@ NOLEAP
 ! Define the climatology accordingly,
 yes? LET U_climatology = U[GT=month_noleap@MOD]
 yes? PLOT/X=180/Y=40/OVERLAY U_climatology
-[reference](https://ferret.pmel.noaa.gov/Ferret/faq/how-do-i-calculate-climatologies-and-climatological-anomalies)
 ```
+[reference](https://ferret.pmel.noaa.gov/Ferret/faq/how-do-i-calculate-climatologies-and-climatological-anomalies)
