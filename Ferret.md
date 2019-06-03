@@ -43,4 +43,25 @@ LET runoff2 = IF runoff GT 0.4e-4 THEN 0.4e-4 else runoff
 ```
 yes? LET uwnd_climatology = uwnd_of_interest[GT=month_reg@MOD]
 yes? PLOT/X=180/Y=40/OVERLAY uwnd_climatology[T=15-jan-1983:15-jan-1991]
+! Subtract to get the anomaly
+! Regrid the anomaly back to the original time axis using @asn to guarantee
+! success (Subtle interpolation errors may occur on irregular time axes 
+! if the @asn regridding isn't done.)
+
+yes? LET uwnd_anomaly = uwnd - uwnd_climatology[gt=uwnd@asn]
+yes? PLOT/X=180/Y=40/T=15-jan-1983:15-jan-1991 uwnd_anomaly
+yes? use my_current_data
+yes? plot/X=180/Y=40 U
+
+yes? LET U_climatology = U[GT=month_reg@MOD]
+yes? PLOT/X=180/Y=40/OVERLAY U_climatology
+ **ERROR: regridding: only @ASN, @LIN, or @NRST regridding between calendar types: NOLEAP, GREGORIAN
+ yes? say `U,return=calendar` 
+!-> MESSAGE/CONTINUE NOLEAP
+NOLEAP
+
+! Define the climatology accordingly,
+yes? LET U_climatology = U[GT=month_noleap@MOD]
+yes? PLOT/X=180/Y=40/OVERLAY U_climatology
+https://ferret.pmel.noaa.gov/Ferret/faq/how-do-i-calculate-climatologies-and-climatological-anomalies
 ```
