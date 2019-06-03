@@ -39,3 +39,8 @@ Usage : GO box xlo xhi ylo yhi [pen_number]
 ```
 LET runoff2 = IF runoff GT 0.4e-4 THEN 0.4e-4 else runoff
 ```
+## Compute climatology and plot over
+```
+yes? LET uwnd_climatology = uwnd_of_interest[GT=month_reg@MOD]
+yes? PLOT/X=180/Y=40/OVERLAY uwnd_climatology[T=15-jan-1983:15-jan-1991]
+```
