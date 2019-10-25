@@ -1,4 +1,10 @@
 # Notes-all-tools
+## speed up loop
+Do not use clear during the loop when you only want to clear very little variable.   
+
+
+
+
 ## figure with worldmap 
 
 
