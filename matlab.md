@@ -47,6 +47,14 @@ xax=[0.07 0.505]; yax=[0.49 0.05]; wax=[0.42]; hax=[0.5];
 cpos=[0.06 0 0.5 1];
 ```
 
+### 1x2
+```
+set(gcf,'paperOrientation','landscape');
+set_figure_size(gcf, '', [0.1 0.1 0.1 0.1],1,0.335);
+xax=[0.07 0.505]; yax=[0.1]; wax=[0.42]; hax=[0.9];
+cpos=[0.06 0 0.5 1];
+```
+
 ### 1x1
 ```
 set_figure_size(gcf, '', [0.1 0.1 0.1 0.1],1,0.325);
