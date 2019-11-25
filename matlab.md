@@ -11,9 +11,9 @@ Do not use clear during the loop when you only want to clear very little variabl
 ### 4x2 (colxrow)
 ```
 set(gcf,'paperOrientation','portrait');
-set_figure_size(gcf, '', [0.1 0.1 0.1 0.1],1.1,0.7);
-xax=[0.08 0.5]; yax=[0.64 0.43 0.22 0.01]; wax=[0.45]; hax=[0.45];
-cpos=[-0.005 0.142 0.5 1/2.8];
+set_figure_size(gcf, '', [0.1 0.1 0.1 0.1],1.2,0.7);
+xax=[0.08 0.51]; yax=[0.64 0.41 0.18 -0.05]; wax=[0.42]; hax=[0.45];
+cpos=[0.06 0 0.5 1];
 ```
 
 ### 3x3
