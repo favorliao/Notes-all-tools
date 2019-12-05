@@ -36,6 +36,14 @@ xax=[0.07 0.50]; yax=[0.68 0.40 0.12]; wax=[0.41]; hax=[0.27];
 cpos=[0.06 0 0.5 1];
 ```
 
+### 3x1
+```
+set(gcf,'paperOrientation','portrait');
+set_figure_size(gcf, '', [0.1 0.1 0.1 0.1],1.0,0.8);
+xax=[0.1]; yax=[0.66 0.36 0.06]; wax=[0.8]; hax=[0.325];
+cpos=[0.08 0 0.5 1];
+```
+
 ### 2x3
 ```
 set(gcf,'paperOrientation','landscape');
