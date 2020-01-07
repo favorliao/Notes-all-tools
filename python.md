@@ -36,3 +36,6 @@ These five lines plot the four maps in one figure
 
 # plot figure
 ds.fco2.sel(xh=slice(180,200)).sel(yh=slice(-5,5)).sel(time=slice("2000-1-1","2004-7-1")).mean("time").plot()
+
+# find the location of installed python code
+`python -c "import PyCNAL_regridding as pr; print(pr.__file__)"`
