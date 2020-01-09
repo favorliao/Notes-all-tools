@@ -65,3 +65,17 @@ yes? LET U_climatology = U[GT=month_noleap@MOD]
 yes? PLOT/X=180/Y=40/OVERLAY U_climatology
 ```
 [reference](https://ferret.pmel.noaa.gov/Ferret/faq/how-do-i-calculate-climatologies-and-climatological-anomalies)
+
+## plot z section profile
+```
+cancel data/all
+cancel region/all
+cancel memory/all
+cancel variable/all
+set memory/size=999
+use tws_coldwave.nc
+set data newreal_avg_000.mc
+file/var="slon,slat"  "/scratch/gpfs2/GEOCLIM/LRGROUP/Liao/Evaluation/ferret/reg_section_redsea.txt"
+set win 1
+let salt_s=samplexy(salt,slon,slat)
+```
