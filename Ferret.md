@@ -81,10 +81,10 @@ let salt_s=samplexy(salt,slon,slat)
 ```
 
 ## plot volume transport
-'''
+```
 let mertrans = v[x=x1:x2@DIN,y=y1,z=0:zmax@DIN]
 let zontrans = u[y=y1:y2@DIN,x=x2,z=0:zmax@DIN]
-'''
+```
 
 The @DIN operator is the definite integral.  So, if your section extends from (x1,y1) to (x2, y2), the transport you want is
 mertrans + zontrans or mertrans - zontrans or depending on the orientation of your section.
