@@ -91,3 +91,11 @@ mertrans + zontrans or mertrans - zontrans or depending on the orientation of yo
 
 This calculation assumes that both meridional and zonal sections are in the ocean and that the sea level change within the triangle (x1,y1)(x2,y1)(x2,y2) is negligible. You would get somewhat inaccurate results if your vertical or horizontal gridspacing is uneven and you don't provide the positions of the edges of the gridcells. cited from here: https://www.pmel.noaa.gov/maillists/tmap/ferret_users/fu_2011/msg00504.html
 
+## plot model (including MOM6) grid lines
+```
+fill/title=0.5degree/lev=(0)(-10)(-20)(-50)(-100)(-200)(-500)(-1000)(-2000)(-3000)(-4000)(-5000)(-6000)(-7000)/pal=land_sea -1*depth_ocean[x=30:136,y=-30:30];go fland
+repeat/j=164:470:40 plot/ov/vs/line/col=1/nolab geolon,geolat
+repeat/i=1:720:40 plot/ov/vs/line/col=1/nolab geolon,geolat
+```
+You also could use the corner grid to plot the grid: geolon_c and geolat_c
+
