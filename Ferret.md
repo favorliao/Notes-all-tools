@@ -79,6 +79,11 @@ file/var="slon,slat"  "/scratch/gpfs2/GEOCLIM/LRGROUP/Liao/Evaluation/ferret/reg
 set win 1
 let salt_s=samplexy(salt,slon,slat)
 ```
+#define points:
+```
+let xpoints = {-42.2090,-41.7973,-41.3856}
+let ypoints = {62.3584, 62.1288,61.8992}
+```
 
 ## plot volume transport
 ```
