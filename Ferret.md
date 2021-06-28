@@ -79,12 +79,12 @@ file/var="slon,slat"  "/scratch/gpfs2/GEOCLIM/LRGROUP/Liao/Evaluation/ferret/reg
 set win 1
 let salt_s=samplexy(salt,slon,slat)
 ```
-# define points manually:
+### define points manually:
 ```
 let xpoints = {-42.2090,-41.7973,-41.3856}
 let ypoints = {62.3584, 62.1288,61.8992}
 ```
-# define points along x-y track automatically from lon(45-105), lat(15S-8N):
+### define points along x-y track automatically from lon(45-105), lat(15S-8N):
 ```
 let xs=45+i[i=1:100]*(105-45)/100
 let ys=-15+i[i=1:100]*(8+15)/100
