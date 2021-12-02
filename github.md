@@ -17,4 +17,6 @@ git clone             https://github.com/NOAA-GFDL/icebergs.git src/icebergs
 
 git submodule update #This gets the right version of submodules  
 
+git diff lrgroup/default origin/lrgroup/dev
+
 `
