@@ -109,3 +109,14 @@ repeat/i=1:720:40 plot/ov/vs/line/col=1/nolab geolon,geolat
 ```
 You also could use the corner grid to plot the grid: geolon_c and geolat_c
 
+## plot model (including MOM6) grid lines
+```
+let xlon={43,61,61}
+let ylat={10.7,17,26}
+plot/vs/over/line xlon,ylat
+```
+
+
+
+
+
